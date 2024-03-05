@@ -58,3 +58,18 @@ deb-src http://mirrors.tencent.com/ubuntu/ focal-updates main restricted univers
 deb http://mirrors.tencent.com/ubuntu/ focal-backports main restricted universe multiverse
 deb-src http://mirrors.tencent.com/ubuntu/ focal-backports main restricted universe multiverse
 ```
+
+### ubuntu22.*
+```
+echo ''>/etc/apt/sources.list
+echo "deb https://mirror.xtom.com.hk/debian/ jammy main non-free contrib" >>/etc/apt/sources.list
+echo "deb-src https://mirror.xtom.com.hk/debian/ jammy main non-free contrib" >>/etc/apt/sources.list
+echo "deb https://mirror.xtom.com.hk/debian-security/ jammy-security main" >>/etc/apt/sources.list
+echo "deb-src https://mirror.xtom.com.hk/debian-security/ jammy-security main" >>/etc/apt/sources.list
+echo "deb https://mirror.xtom.com.hk/debian/ jammy-updates main non-free contrib" >>/etc/apt/sources.list
+echo "deb-src https://mirror.xtom.com.hk/debian/ jammy-updates main non-free contrib" >>/etc/apt/sources.list
+echo "deb https://mirror.xtom.com.hk/debian/ jammy-backports main non-free contrib" >>/etc/apt/sources.list
+echo "deb-src https://mirror.xtom.com.hk/debian/ jammy-backports main non-free contrib" >>/etc/apt/sources.list
+apt update -y 
+apt install curl -y 
+```
