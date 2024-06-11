@@ -44,6 +44,20 @@ echo "deb-src https://mirror.xtom.com.hk/debian/ bullseye-backports main non-fre
 apt update -y 
 apt install curl -y 
 ```
+### debian 12
+```
+echo ''>/etc/apt/sources.list
+echo "deb http://deb.debian.org/debian/ bookworm main non-free contrib" >> /etc/apt/sources.list
+echo "deb-src http://deb.debian.org/debian/ bookworm main non-free contrib" >> /etc/apt/sources.list
+echo "deb http://security.debian.org/debian-security bookworm-security main" >> /etc/apt/sources.list
+echo "deb-src http://security.debian.org/debian-security bookworm-security main" >> /etc/apt/sources.list
+echo "deb http://deb.debian.org/debian/ bookworm-updates main non-free contrib" >> /etc/apt/sources.list
+echo "deb-src http://deb.debian.org/debian/ bookworm-updates main non-free contrib" >> /etc/apt/sources.list
+echo "deb http://deb.debian.org/debian/ bookworm-backports main non-free contrib" >> /etc/apt/sources.list
+echo "deb-src http://deb.debian.org/debian/ bookworm-backports main non-free contrib" >> /etc/apt/sources.list
+apt update -y 
+apt install curl -y
+```
 
 ### ubuntu20.* LTS
 ```
